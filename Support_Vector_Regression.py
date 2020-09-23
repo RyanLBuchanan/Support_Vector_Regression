@@ -28,7 +28,9 @@ sc_y = StandardScaler()
 X = sc_X.fit_transform(X)
 y = sc_y.fit_transform(y)
 
+print(X)
 
+print(y)
 # Train the SVR model on the whole dataset
 
 
