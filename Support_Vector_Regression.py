@@ -35,7 +35,7 @@ print(y)
 # Train the SVR model on the whole dataset
 from sklearn.svm import SVR
 regressor = SVR(kernel = 'rbf')
- 
+regressor.fit(X, y) 
 
 # Predict a new result
 
