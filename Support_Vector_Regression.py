@@ -31,8 +31,11 @@ y = sc_y.fit_transform(y)
 print(X)
 
 print(y)
-# Train the SVR model on the whole dataset
 
+# Train the SVR model on the whole dataset
+from sklearn.svm import SVR
+regressor = SVR(kernel = 'rbf')
+ 
 
 # Predict a new result
 
