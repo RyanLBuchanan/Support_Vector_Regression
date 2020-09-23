@@ -11,6 +11,13 @@ dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:-1].values
 y = dataset.iloc[:, -1].values
 
+print(X)
+
+print(y)
+
+# Reshape dependent variable into 2D column vector
+y.reshape(len(y), 1)
+
 # Feature Scaling
 
 
