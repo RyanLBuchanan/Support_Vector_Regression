@@ -16,7 +16,10 @@ print(X)
 print(y)
 
 # Reshape dependent variable into 2D column vector
-y.reshape(len(y), 1)
+y = y.reshape(len(y), 1)
+
+# Display salaries vertically
+print(y)
 
 # Feature Scaling
 
