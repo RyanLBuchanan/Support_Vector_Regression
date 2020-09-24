@@ -38,8 +38,7 @@ regressor = SVR(kernel = 'rbf')
 regressor.fit(X, y) 
 
 # Predict a new result
-
-
+print("The predicted salary is ", round(float(sc_y.inverse_transform(regressor.predict(sc_X.transform([[6.5]]))))), 2)
 # Visualize the SVR results
 
 
