@@ -41,7 +41,12 @@ regressor.fit(X, y)
 print("The predicted salary is $" + str(int(sc_y.inverse_transform(regressor.predict(sc_X.transform([[6.5]]))))))
 
 # Visualize the SVR results
-
+plt.scatter(sc_X.inverse_transform(X), sc_y.inverse_transform(y), color = 'red')
+plt.plot(sc_X.inverse_transform(X), sc_y.inverse_transform(regressor.predict(X)), color = 'blue')
+plt.title('Truth or Bluff (Linear Regression)')
+plt.xlabel('Position Level')
+plt.ylabel('Salary')
+plt.show()
 
 # Visualize the SVR results (for higher resolution and smooth curve)
 
